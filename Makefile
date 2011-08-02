@@ -16,7 +16,7 @@ OFILES_386=\
 	#sqrtf_386.$O\
 
 OFILES=\
-	#$(OFILES_$(GOARCH))
+	$(OFILES_$(GOARCH))
 
 ALLGOFILES=\
 	all_port.go\

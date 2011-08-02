@@ -20,5 +20,5 @@ import "math"
 //	Sqrtf(x < 0) = NaN
 //	Sqrtf(fNaN) = NaN
 func Sqrtf(x float32) float32 {
-		return float32(math.Sqrt(float64(x)))
+	return float32(math.Sqrt(float64(x)))
 }
