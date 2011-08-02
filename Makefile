@@ -10,7 +10,7 @@ OFILES_arm=\
 	#sqrtf_arm.$O\
 
 OFILES_amd64=\
-	#sqrtf_amd64.$O\
+	sqrtf_amd64.$O\
 
 OFILES_386=\
 	#sqrtf_386.$O\
@@ -19,8 +19,7 @@ OFILES=\
 	$(OFILES_$(GOARCH))
 
 ALLGOFILES=\
-	all_port.go\
-	#sqrtf.go\
+	sqrtf.go\
 	#sqrtf_port.go\
 
 NOGOFILES=\

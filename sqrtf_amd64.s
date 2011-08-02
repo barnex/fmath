@@ -4,6 +4,6 @@
 
 // func Sqrtf(x float32) float32
 TEXT ·Sqrtf+0(SB),$0-16
-	MOVSS   x+0(FP),X0
+	SQRTSS	 x+0(FP), X0
 	MOVSS   X0,.noname+8(FP)
 	RET
