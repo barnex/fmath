@@ -4,4 +4,3 @@
 
 // float32 math package.
 package fmath
-
