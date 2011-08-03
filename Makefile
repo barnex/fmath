@@ -58,4 +58,14 @@ GOFILES=\
 	$(filter-out $(NOGOFILES),$(ALLGOFILES))\
 	$(subst .go,_decl.go,$(NOGOFILES))\
 
+CLEANFILES+=\
+	sqrtf_decl.go\
+
 include $(GOROOT)/src/Make.pkg
+
+# Workaround to have this package goinstallable
+# goinstall should not see files like *_decl.go,
+# so we give them a .nogoinstall extension.
+sqrtf_decl.go: sqrtf_decl.nogoinstall
+	cp sqrtf_decl.nogoinstall sqrtf_decl.go
+
