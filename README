@@ -1,4 +1,8 @@
-32-bit floating point math library for GO
+32-bit floating point math library for GO.
 
+This library provides float32 counterparts for Go's float64 math functions.
+E.g.: Sqrtf(x float32) float32.
 
+The implementation partially uses assembly code (see, e.g., sqrtf_amd64.s) for fast computation. However, when no assembly implementation exists yet a generic implementation is used which uses Go's float64 math functions underneath.
 
+Note: due to the presence of assembly code, this package is not goinstallable on all platforms. You must download it and execute "make install" manually.
