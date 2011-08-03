@@ -3,9 +3,9 @@ funcs='Acos Acosh Asin Asinh Atan  Atanh Cbrt Ceil  Cos Cosh Erf Erfc Exp Exp2 E
 
 for f in $funcs; do
 	file=$(echo $f | tr '[A-Z]' '[a-z]')'f'.go
-	sed "s/XXXX/$f'f'/g" template > $file
-	rm $file
+	sed "s/XXXX/$f/g" template > $file
+	#git add $file
 done
 
 
-#Atan2 Copysign Fdim Fmod Frexp Hypot Inf IsInf IsNaN Ilogb Jn Ldexp Lgamma Modf NaN Nextafter Pow Pow10 Remainder Signbit Sincos  Yn
+#Atan2 Copysign Fdim Fmod Frexp Hypot Inf IsInf IsNaN Ilogb Jn Ldexp Lgamma Modf NaN Nextafter Pow Pow10 Remainder Signbit Sincos  Yn fmaxf fminf

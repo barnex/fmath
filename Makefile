@@ -17,8 +17,39 @@ OFILES=\
 	$(OFILES_$(GOARCH))
 
 ALLGOFILES=\
+	acosf.go\
 	acoshf.go\
+	asinf.go\
+	asinhf.go\
+	atanf.go\
+	atanhf.go\
+	cbrtf.go\
+	ceilf.go\
+	cosf.go\
+	coshf.go\
+	erfcf.go\
+	erff.go\
+	exp2f.go\
+	expf.go\
+	expm1f.go\
+	fabsf.go\
+	floorf.go\
+	gammaf.go\
+	j0f.go\
+	j1f.go\
+	log10f.go\
+	log1pf.go\
+	log2f.go\
+	logbf.go\
+	logf.go\
+	sinf.go\
+	sinhf.go\
 	sqrtf.go\
+	tanf.go\
+	tanhf.go\
+	truncf.go\
+	y0f.go\
+	y1f.go\
 
 NOGOFILES=\
 	$(subst _$(GOARCH).$O,.go,$(OFILES_$(GOARCH)))

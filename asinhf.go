@@ -6,7 +6,7 @@ package fmath
 
 import "math"
 
-// float32 XXXXf
-func XXXXf(x float32) float32 {
-	return float32(math.XXXX(float64(x)))
+// float32 Asinhf
+func Asinhf(x float32) float32 {
+	return float32(math.Asinh(float64(x)))
 }

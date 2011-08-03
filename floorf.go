@@ -6,7 +6,7 @@ package fmath
 
 import "math"
 
-// float32 XXXXf
-func XXXXf(x float32) float32 {
-	return float32(math.XXXX(float64(x)))
+// float32 Floorf
+func Floorf(x float32) float32 {
+	return float32(math.Floor(float64(x)))
 }
