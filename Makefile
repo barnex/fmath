@@ -7,20 +7,18 @@ include $(GOROOT)/src/Make.inc
 TARG=fmath
 
 OFILES_arm=\
-	#sqrtf_arm.$O\
 
 OFILES_amd64=\
 	sqrtf_amd64.$O\
 
 OFILES_386=\
-	#sqrtf_386.$O\
 
 OFILES=\
 	$(OFILES_$(GOARCH))
 
 ALLGOFILES=\
+	acoshf.go\
 	sqrtf.go\
-	#sqrtf_port.go\
 
 NOGOFILES=\
 	$(subst _$(GOARCH).$O,.go,$(OFILES_$(GOARCH)))
