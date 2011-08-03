@@ -10,11 +10,11 @@ for f in $funcs1; do
 done
 
 # float32, float32 -> float32 functions
-funcs2='Atan2'
+funcs2='Atan2 Copysign Fdim Fmin Fmax Fmod Hypot Pow'
 for f in $funcs2; do
 	file=$(echo $f | tr '[A-Z]' '[a-z]')'f'.go
 	sed "s/XXXX/$f/g" template2 > $file
 	git add $file
 done
 
-#Copysign Fdim Fmod Frexp Hypot Inf IsInf IsNaN Ilogb Jn Ldexp Lgamma Modf NaN Nextafter Pow Pow10 Remainder Signbit Sincos  Yn fmaxf fminf
+#  Frexp Inf IsInf IsNaN Ilogb Jn Ldexp Lgamma Modf NaN Nextafter  Pow10 Remainder Signbit Sincos  Yn 

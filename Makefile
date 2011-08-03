@@ -50,6 +50,14 @@ ALLGOFILES=\
 	truncf.go\
 	y0f.go\
 	y1f.go\
+	atan2.go\
+   	copysign.go\
+   	fdim.go\
+   	fmin.go\
+   	fmax.go\
+   	fmod.go\
+   	hypot.go\
+   	pow.go\
 
 NOGOFILES=\
 	$(subst _$(GOARCH).$O,.go,$(OFILES_$(GOARCH)))
