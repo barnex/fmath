@@ -58,6 +58,7 @@ ALLGOFILES=\
    	fmodf.go\
    	hypotf.go\
    	powf.go\
+	sincosf.go\
 
 NOGOFILES=\
 	$(subst _$(GOARCH).$O,.go,$(OFILES_$(GOARCH)))

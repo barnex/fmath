@@ -2660,11 +2660,11 @@ func BenchmarkSin(b *testing.B) {
 	}
 }
 
-//func BenchmarkSincos(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
-//		Sincosf(.5)
-//	}
-//}
+func BenchmarkSincos(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Sincosf(.5)
+	}
+}
 
 func BenchmarkSinh(b *testing.B) {
 	for i := 0; i < b.N; i++ {
