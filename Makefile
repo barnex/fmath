@@ -60,6 +60,7 @@ GOFILES=\
 
 CLEANFILES+=\
 	sqrtf_decl.go\
+	sqrtf_amd64.s\
 
 include $(GOROOT)/src/Make.pkg
 
@@ -69,3 +70,5 @@ include $(GOROOT)/src/Make.pkg
 sqrtf_decl.go: sqrtf_decl.nogoinstall
 	cp sqrtf_decl.nogoinstall sqrtf_decl.go
 
+sqrtf_amd64.s: sqrtf_amd64.snogoinstall
+	cp sqrtf_amd64.snogoinstall sqrtf_amd64.s
