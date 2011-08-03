@@ -2,11 +2,15 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+// This file provides a trivial implementation based on
+// Go's float64 math library. It may be overridden by an
+// assembly implementation when available for the platform.
+
 package fmath
 
 import "math"
 
-// float32 Atan2f
+// float32 version of math.Atan2f
 func Atan2f(x, y float32) float32 {
 	return float32(math.Atan2(float64(x), float64(y)))
 }

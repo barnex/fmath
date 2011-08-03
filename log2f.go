@@ -2,11 +2,15 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+// This file provides a trivial implementation based on
+// Go's float64 math library. It may be overridden by an
+// assembly implementation when available for the platform.
+
 package fmath
 
 import "math"
 
-// float32 Log2f
+// float32 version of math.Log2f
 func Log2f(x float32) float32 {
 	return float32(math.Log2(float64(x)))
 }
