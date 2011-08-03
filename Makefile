@@ -58,17 +58,25 @@ GOFILES=\
 	$(filter-out $(NOGOFILES),$(ALLGOFILES))\
 	$(subst .go,_decl.go,$(NOGOFILES))\
 
-CLEANFILES+=\
-	sqrtf_decl.go\
+
+# Files to be ignored by goinstall
+ASMFILES=\
 	sqrtf_amd64.s\
+
+DECLFILES=\
+	sqrtf_decl.go\
+
+CLEANFILES+=$(ASMFILES) $(DECLFILES)
 
 include $(GOROOT)/src/Make.pkg
 
 # Workaround to have this package goinstallable
 # goinstall should not see files like *_decl.go,
 # so we give them a .nogoinstall extension.
-sqrtf_decl.go: sqrtf_decl.nogoinstall
-	cp sqrtf_decl.nogoinstall sqrtf_decl.go
+$(ASMFILES): %.s: %.s.nogoinstall
+	 cp $@.nogoinstall $(@)
 
-sqrtf_amd64.s: sqrtf_amd64.snogoinstall
-	cp sqrtf_amd64.snogoinstall sqrtf_amd64.s
+$(DECLFILES): %.go: %.go.nogoinstall
+	 cp $@.nogoinstall $(@)
+
+
