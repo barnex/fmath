@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Erff
-func Erff(x float32) float32 {
+func Erf(x float32) float32 {
 	return float32(math.Erf(float64(x)))
 }

@@ -11,7 +11,7 @@ package fmath
 import "math"
 
 // float32 version of math.Sincos
-func Sincosf(x float32) (sin, cos float32) {
+func Sincos(x float32) (sin, cos float32) {
 	sin64, cos64 := math.Sincos(float64(x))
 	sin = float32(sin64)
 	cos = float32(cos64)

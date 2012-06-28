@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Gammaf
-func Gammaf(x float32) float32 {
+func Gamma(x float32) float32 {
 	return float32(math.Gamma(float64(x)))
 }

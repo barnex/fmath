@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Cbrtf
-func Cbrtf(x float32) float32 {
+func Cbrt(x float32) float32 {
 	return float32(math.Cbrt(float64(x)))
 }

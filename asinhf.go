@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Asinhf
-func Asinhf(x float32) float32 {
+func Asinh(x float32) float32 {
 	return float32(math.Asinh(float64(x)))
 }

@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Atanhf
-func Atanhf(x float32) float32 {
+func Atanh(x float32) float32 {
 	return float32(math.Atanh(float64(x)))
 }

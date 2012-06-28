@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Ceilf
-func Ceilf(x float32) float32 {
+func Ceil(x float32) float32 {
 	return float32(math.Ceil(float64(x)))
 }

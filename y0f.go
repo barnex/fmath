@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Y0f
-func Y0f(x float32) float32 {
+func Y0(x float32) float32 {
 	return float32(math.Y0(float64(x)))
 }

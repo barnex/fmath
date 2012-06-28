@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Hypotf
-func Hypotf(x, y float32) float32 {
+func Hypot(x, y float32) float32 {
 	return float32(math.Hypot(float64(x), float64(y)))
 }

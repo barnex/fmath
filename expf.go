@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Expf
-func Expf(x float32) float32 {
+func Exp(x float32) float32 {
 	return float32(math.Exp(float64(x)))
 }

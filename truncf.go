@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Truncf
-func Truncf(x float32) float32 {
+func Trunc(x float32) float32 {
 	return float32(math.Trunc(float64(x)))
 }

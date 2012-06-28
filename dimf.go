@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Fdimf
-func Dimf(x, y float32) float32 {
+func Dim(x, y float32) float32 {
 	return float32(math.Dim(float64(x), float64(y)))
 }

@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Fmodf
-func Modf(x, y float32) float32 {
+func Mod(x, y float32) float32 {
 	return float32(math.Mod(float64(x), float64(y)))
 }

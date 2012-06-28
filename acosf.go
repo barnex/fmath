@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Acosf
-func Acosf(x float32) float32 {
+func Acos(x float32) float32 {
 	return float32(math.Acos(float64(x)))
 }

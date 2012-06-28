@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Copysignf
-func Copysignf(x, y float32) float32 {
+func Copysign(x, y float32) float32 {
 	return float32(math.Copysign(float64(x), float64(y)))
 }

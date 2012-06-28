@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Asinf
-func Asinf(x float32) float32 {
+func Asin(x float32) float32 {
 	return float32(math.Asin(float64(x)))
 }

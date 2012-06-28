@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Acoshf
-func Acoshf(x float32) float32 {
+func Acosh(x float32) float32 {
 	return float32(math.Acosh(float64(x)))
 }

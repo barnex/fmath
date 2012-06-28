@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Tanf
-func Tanf(x float32) float32 {
+func Tan(x float32) float32 {
 	return float32(math.Tan(float64(x)))
 }

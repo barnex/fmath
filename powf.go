@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Powf
-func Powf(x, y float32) float32 {
+func Pow(x, y float32) float32 {
 	return float32(math.Pow(float64(x), float64(y)))
 }

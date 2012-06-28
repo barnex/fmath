@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Logf
-func Logf(x float32) float32 {
+func Log(x float32) float32 {
 	return float32(math.Log(float64(x)))
 }

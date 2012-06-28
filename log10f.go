@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Log10f
-func Log10f(x float32) float32 {
+func Log10(x float32) float32 {
 	return float32(math.Log10(float64(x)))
 }

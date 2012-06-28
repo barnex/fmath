@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Atan2f
-func Atan2f(x, y float32) float32 {
+func Atan2(x, y float32) float32 {
 	return float32(math.Atan2(float64(x), float64(y)))
 }

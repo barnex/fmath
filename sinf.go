@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Sinf
-func Sinf(x float32) float32 {
+func Sin(x float32) float32 {
 	return float32(math.Sin(float64(x)))
 }

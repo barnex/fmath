@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.J1f
-func J1f(x float32) float32 {
+func J1(x float32) float32 {
 	return float32(math.J1(float64(x)))
 }
