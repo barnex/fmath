@@ -2485,7 +2485,6 @@ func BenchmarkExp(b *testing.B) {
 	}
 }
 
-
 func BenchmarkExpm1(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Expm1f(.5)

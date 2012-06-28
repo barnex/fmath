@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Fminf
-func Fminf(x, y float32) float32 {
-	return float32(math.Fmin(float64(x), float64(y)))
+func Minf(x, y float32) float32 {
+	return float32(math.Min(float64(x), float64(y)))
 }

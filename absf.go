@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Fabsf
-func Fabsf(x float32) float32 {
-	return float32(math.Fabs(float64(x)))
+func Absf(x float32) float32 {
+	return float32(math.Abs(float64(x)))
 }

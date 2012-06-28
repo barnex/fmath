@@ -11,6 +11,6 @@ package fmath
 import "math"
 
 // float32 version of math.Fmaxf
-func Fmaxf(x, y float32) float32 {
-	return float32(math.Fmax(float64(x), float64(y)))
+func Maxf(x, y float32) float32 {
+	return float32(math.Max(float64(x), float64(y)))
 }
