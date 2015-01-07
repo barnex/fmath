@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Erfcf
+// float32 version of math.Erfc
 func Erfc(x float32) float32 {
 	return float32(math.Erfc(float64(x)))
 }

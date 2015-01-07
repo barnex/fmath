@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Sqrtf
+// float32 version of math.Sqrt
 func Sqrt(x float32) float32 {
 	return float32(math.Sqrt(float64(x)))
 }

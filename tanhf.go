@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Tanhf
+// float32 version of math.Tanh
 func Tanh(x float32) float32 {
 	return float32(math.Tanh(float64(x)))
 }

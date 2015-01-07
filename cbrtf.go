@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Cbrtf
+// float32 version of math.Cbrt
 func Cbrt(x float32) float32 {
 	return float32(math.Cbrt(float64(x)))
 }

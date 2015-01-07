@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Cosf
+// float32 version of math.Cos
 func Cos(x float32) float32 {
 	return float32(math.Cos(float64(x)))
 }

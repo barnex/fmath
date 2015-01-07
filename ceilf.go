@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Ceilf
+// float32 version of math.Ceil
 func Ceil(x float32) float32 {
 	return float32(math.Ceil(float64(x)))
 }

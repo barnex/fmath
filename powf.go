@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Powf
+// float32 version of math.Pow
 func Pow(x, y float32) float32 {
 	return float32(math.Pow(float64(x), float64(y)))
 }

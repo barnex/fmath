@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Gammaf
+// float32 version of math.Gamma
 func Gamma(x float32) float32 {
 	return float32(math.Gamma(float64(x)))
 }

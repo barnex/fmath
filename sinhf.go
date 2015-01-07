@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Sinhf
+// float32 version of math.Sinh
 func Sinh(x float32) float32 {
 	return float32(math.Sinh(float64(x)))
 }

@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Floorf
+// float32 version of math.Floor
 func Floor(x float32) float32 {
 	return float32(math.Floor(float64(x)))
 }

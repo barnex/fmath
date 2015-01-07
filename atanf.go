@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Atanf
+// float32 version of math.Atan
 func Atan(x float32) float32 {
 	return float32(math.Atan(float64(x)))
 }
