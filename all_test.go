@@ -4,6 +4,9 @@
 
 // Modified by Arne Vansteenkiste, 2011.
 
+// Use go generate to generate go files from templates.
+//go:generate bash codegen.bash
+
 package fmath
 
 import (
