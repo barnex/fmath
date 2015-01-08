@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Exp2f
+// float32 version of math.Exp2
 func Exp2(x float32) float32 {
 	return float32(math.Exp2(float64(x)))
 }

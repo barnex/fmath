@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Asinf
+// float32 version of math.Asin
 func Asin(x float32) float32 {
 	return float32(math.Asin(float64(x)))
 }

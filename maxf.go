@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Fmaxf
+// float32 version of math.Max
 func Max(x, y float32) float32 {
 	return float32(math.Max(float64(x), float64(y)))
 }

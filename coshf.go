@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Coshf
+// float32 version of math.Cosh
 func Cosh(x float32) float32 {
 	return float32(math.Cosh(float64(x)))
 }

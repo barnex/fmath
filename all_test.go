@@ -4,10 +4,12 @@
 
 // Modified by Arne Vansteenkiste, 2011.
 
-package fmath_test
+// Use go generate to generate go files from templates.
+//go:generate bash codegen.bash
+
+package fmath
 
 import (
-	. "fmath"
 	"testing"
 )
 
@@ -2397,157 +2399,145 @@ import (
 
 func BenchmarkAcos(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Acosf(.5)
+		Acos(.5)
 	}
 }
 
 func BenchmarkAcosh(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Acoshf(1.5)
+		Acosh(1.5)
 	}
 }
 
 func BenchmarkAsin(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Asinf(.5)
+		Asin(.5)
 	}
 }
 
 func BenchmarkAsinh(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Asinhf(.5)
+		Asinh(.5)
 	}
 }
 
 func BenchmarkAtan(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Atanf(.5)
+		Atan(.5)
 	}
 }
 
 func BenchmarkAtanh(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Atanhf(.5)
+		Atanh(.5)
 	}
 }
 
 func BenchmarkAtan2(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Atan2f(.5, 1)
+		Atan2(.5, 1)
 	}
 }
 
 func BenchmarkCbrt(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Cbrtf(10)
+		Cbrt(10)
 	}
 }
 
 func BenchmarkCeil(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Ceilf(.5)
+		Ceil(.5)
 	}
 }
 
 func BenchmarkCopysign(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Copysignf(.5, -1)
+		Copysign(.5, -1)
 	}
 }
 
 func BenchmarkCos(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Cosf(.5)
+		Cos(.5)
 	}
 }
 
 func BenchmarkCosh(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Coshf(2.5)
+		Cosh(2.5)
 	}
 }
 
 func BenchmarkErf(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Erff(.5)
+		Erf(.5)
 	}
 }
 
 func BenchmarkErfc(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Erfcf(.5)
+		Erfc(.5)
 	}
 }
 
 func BenchmarkExp(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Expf(.5)
+		Exp(.5)
 	}
 }
 
 func BenchmarkExpm1(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Expm1f(.5)
+		Expm1(.5)
 	}
 }
 
 func BenchmarkExp2(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Exp2f(.5)
+		Exp2(.5)
 	}
 }
 
 func BenchmarkFabs(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Fabsf(.5)
-	}
-}
-
-func BenchmarkFdim(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		Fdimf(10, 3)
+		Abs(.5)
 	}
 }
 
 func BenchmarkFloor(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Floorf(.5)
+		Floor(.5)
 	}
 }
 
 func BenchmarkFmax(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Fmaxf(10, 3)
+		Max(10, 3)
 	}
 }
 
 func BenchmarkFmin(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Fminf(10, 3)
+		Min(10, 3)
 	}
 }
 
 func BenchmarkFmod(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Fmodf(10, 3)
+		Remainder(10, 3)
 	}
 }
 
-//func BenchmarkFrexp(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
-//		Frexpf(8)
-//	}
-//}
-
 func BenchmarkGamma(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Gammaf(2.5)
+		Gamma(2.5)
 	}
 }
 
 func BenchmarkHypot(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Hypotf(3, 4)
+		Hypot(3, 4)
 	}
 }
 
@@ -2559,13 +2549,13 @@ func BenchmarkHypot(b *testing.B) {
 
 func BenchmarkJ0(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		J0f(2.5)
+		J0(2.5)
 	}
 }
 
 func BenchmarkJ1(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		J1f(2.5)
+		J1(2.5)
 	}
 }
 
@@ -2589,31 +2579,31 @@ func BenchmarkJ1(b *testing.B) {
 
 func BenchmarkLog(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Logf(.5)
+		Log(.5)
 	}
 }
 
 func BenchmarkLogb(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Logbf(.5)
+		Logb(.5)
 	}
 }
 
 func BenchmarkLog1p(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Log1pf(.5)
+		Log1p(.5)
 	}
 }
 
 func BenchmarkLog10(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Log10f(.5)
+		Log10(.5)
 	}
 }
 
 func BenchmarkLog2(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Log2f(.5)
+		Log2(.5)
 	}
 }
 
@@ -2631,21 +2621,15 @@ func BenchmarkLog2(b *testing.B) {
 
 func BenchmarkPowInt(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Powf(2, 2)
+		Pow(2, 2)
 	}
 }
 
 func BenchmarkPowFrac(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Powf(2.5, 1.5)
+		Pow(2.5, 1.5)
 	}
 }
-
-//func BenchmarkRemainder(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
-//		Remainderf(10, 3)
-//	}
-//}
 
 //func BenchmarkSignbit(b *testing.B) {
 //	for i := 0; i < b.N; i++ {
@@ -2655,54 +2639,54 @@ func BenchmarkPowFrac(b *testing.B) {
 
 func BenchmarkSin(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Sinf(.5)
+		Sin(.5)
 	}
 }
 
 func BenchmarkSincos(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Sincosf(.5)
+		Sincos(.5)
 	}
 }
 
 func BenchmarkSinh(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Sinhf(2.5)
+		Sinh(2.5)
 	}
 }
 
 func BenchmarkSqrt(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Sqrtf(10)
+		Sqrt(10)
 	}
 }
 
 func BenchmarkTan(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Tanf(.5)
+		Tan(.5)
 	}
 }
 
 func BenchmarkTanh(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Tanhf(2.5)
+		Tanh(2.5)
 	}
 }
 func BenchmarkTrunc(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Truncf(.5)
+		Trunc(.5)
 	}
 }
 
 func BenchmarkY0(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Y0f(2.5)
+		Y0(2.5)
 	}
 }
 
 func BenchmarkY1(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Y1f(2.5)
+		Y1(2.5)
 	}
 }
 

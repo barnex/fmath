@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Asinhf
+// float32 version of math.Asinh
 func Asinh(x float32) float32 {
 	return float32(math.Asinh(float64(x)))
 }

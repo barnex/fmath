@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Logbf
+// float32 version of math.Logb
 func Logb(x float32) float32 {
 	return float32(math.Logb(float64(x)))
 }

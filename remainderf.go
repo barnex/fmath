@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.XXXX
-func XXXX(x, y float32) float32 {
-	return float32(math.XXXX(float64(x), float64(y)))
+// float32 version of math.Remainder
+func Remainder(x, y float32) float32 {
+	return float32(math.Remainder(float64(x), float64(y)))
 }

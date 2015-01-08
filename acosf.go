@@ -10,7 +10,7 @@ package fmath
 
 import "math"
 
-// float32 version of math.Acosf
+// float32 version of math.Acos
 func Acos(x float32) float32 {
 	return float32(math.Acos(float64(x)))
 }
